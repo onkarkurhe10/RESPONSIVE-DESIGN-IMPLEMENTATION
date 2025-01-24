@@ -1,0 +1,211 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #007bff; /* Blue color */
+    color: white;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+header .logo i {
+    margin-right: 10px;
+    font-size: 2rem;
+    color: #28a745; /* Green color for the icon */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a i {
+    margin-right: 0.5rem;
+}
+
+/* Hero Section Styling */
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #28a745; /* Green background */
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Hero Image Styling */
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section Styling */
+.info {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    color: #333;
+}
+
+.info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.info p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Content Section Styling */
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card i {
+    font-size: 2.5rem;
+    color: #007bff; /* Blue color for icons */
+    margin-bottom: 1rem;
+}
+
+.card h2 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #007bff; /* Blue color */
+    color: white;
+}
+
+/* Mobile Styling - Menu Toggle Button */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #007bff; /* Blue color */
+        width: 200px;
+        text-align: right;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    nav ul li a {
+        padding: 1rem;
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+}

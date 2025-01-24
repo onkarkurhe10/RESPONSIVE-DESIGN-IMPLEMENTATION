@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness App</title>
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-dumbbell"></i> FitLife
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-dumbbell"></i> Workouts</a></li>
+                <li><a href="#"><i class="fas fa-chart-line"></i> Progress</a></li>
+                <li><a href="#"><i class="fas fa-cogs"></i> Settings</a></li>
+            </ul>
+        </nav>
+        <button id="menu-toggle" class="menu-toggle"><i class="fas fa-bars"></i></button>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to FitLife</h1>
+        <p>Your fitness journey starts here!</p>
+        <img src="https://via.placeholder.com/1200x600" alt="Fitness Journey" class="hero-image">
+    </section>
+
+    <section class="info">
+        <h2>About Us</h2>
+        <p>FitLife is the ultimate fitness app to help you stay active, track your progress, and achieve your health goals. Whether you're a beginner or an advanced athlete, FitLife provides the tools and motivation to keep you going. Our customized workout plans and progress tracking system are designed to take your fitness to the next level.</p>
+    </section>
+
+    <section class="content">
+        <div class="card">
+            <i class="fas fa-running"></i>
+            <h2>Customized Workouts</h2>
+            <p>Personalized fitness routines tailored to your fitness level and goals.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-heartbeat"></i>
+            <h2>Track Your Progress</h2>
+            <p>Monitor your performance, health metrics, and improvements over time.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-bolt"></i>
+            <h2>Stay Motivated</h2>
+            <p>Get regular fitness challenges and rewards to stay motivated and on track.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FitLife | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
